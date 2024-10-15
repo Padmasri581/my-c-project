@@ -1,0 +1,28 @@
+#include<stdio.h>
+void main()
+ { 
+    int eu;
+    float eb;
+    printf("enter electricity units:");
+    scanf("%d",&eu);
+    if(eu<=50.0) 
+    {
+        eb=eu*0.50;
+        printf("%f",eb);
+    }
+    else if(eu>50.0 && eu<=150.0)
+    {
+        eb=50*0.50+(eu-50)*0.75;
+        printf("%f",eb);
+    }
+    else if(eu>150.0 && eu<=250.0)
+    {
+        eb=50*0.50+100*0.75+(eu-150)*1.20;
+        printf("%f",eb);
+    }
+    else 
+    {
+        eb=50*0.50+100*0.75+150*1.20+(eu-250)*1.5;
+        printf("%f",eb);
+    }
+}

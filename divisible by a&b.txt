@@ -1,0 +1,21 @@
+#include<stdio.h>
+void main()
+{
+   int X,Y,a,b,i;
+   printf("Enter the value of X:");
+   scanf("%d",&X);
+   printf("Enter the value of Y:");
+   scanf("%d",&Y);
+   printf("Enter the value of a:");
+   scanf("%d",&a);
+   printf("Enter the value of b:");
+   scanf("%d",&b);
+   printf("Numbers between %d and %d that are divisible by %d and %d:",X,Y,a,b);
+   for(i=X;i<=Y;i++)
+   {
+      if(i%a==0 && i%b==0)
+      {
+         printf("%d\n",i);
+      }
+   }
+}
